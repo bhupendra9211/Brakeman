@@ -1,0 +1,10 @@
+<h1>Redirect Vulnerability Demo</h1>
+<p>
+  <%= link_to 'Vulnerable Redirect', vulnerable_path(url: 'http://malicious.com') %>
+</p>
+<p>
+  <%= link_to 'Secure Redirect', secure_path(url: 'http://malicious.com') %>
+</p>
+<p>
+  <%= link_to 'Secure Redirect to Home', secure_path(url: root_url) %>
+</p>
