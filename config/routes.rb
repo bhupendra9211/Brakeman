@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  get "contact" => 'home#contact'
+  root 'redirects#index'
+  get 'vulnerable', to: 'redirects#vulnerable'
+  get 'secure', to: 'redirects#secure'
+  # root 'home#index'
+  get "contact", to: 'home#contact'
   get "policy" => 'home#policy'
   # get 'home/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
