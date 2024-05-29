@@ -1,10 +1,10 @@
 <h1>Home#index</h1>
 <p>Find me in app/views/home/index.html.erb</p>
-<%#= link_to 'Click here for contact', contact_path%>
+<%= link_to 'Click here for contact', contact_path%>
 
 <%# = Unsafe parameter value in link_to href %>
 <%#= link_to 'Click here',params[:url]%>
 
-<%# This will remove the warning for security vulnerability also have to defing application_helper.rb %>
-<%= link_to 'Click here', safe_url(params[:url]) %>
+<%#also have to defing application_helper.rb  This will remove the warning for security vulnerability but it is vulnerable%>
+<%#= link_to 'Click here', safe_url(params[:url]) %>
 
